@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Companies | PlaceTrack</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="company-navbar">
+        <h2>PlaceTrack</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="companies.html" class="active">Companies</a>
+            <a href="applications.html">Applications</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="company-header">
+        <h1>Explore Placement Opportunities</h1>
+        <p>Discover companies, check eligibility and prepare for your next opportunity.</p>
+    </section>
+
+    <!-- Search -->
+    <section class="company-search">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search company or role..."
+        >
+
+        <button onclick="searchCompanies()">Search</button>
+    </section>
+
+    <!-- Company Cards -->
+    <section class="company-container" id="companyContainer">
+
+        <div class="company-card">
+            <h2>Google</h2>
+            <p class="role">Software Engineer</p>
+            <p><strong>Package:</strong> 18 LPA</p>
+            <p><strong>Eligibility:</strong> 7.5 CGPA</p>
+            <p><strong>Location:</strong> Bangalore</p>
+            <span class="status">Applications Open</span>
+            <button onclick="applyForJob('Google')">Apply Now</button>
+        </div>
+
+        <div class="company-card">
+            <h2>Microsoft</h2>
+            <p class="role">Software Development Engineer</p>
+            <p><strong>Package:</strong> 20 LPA</p>
+            <p><strong>Eligibility:</strong> 8 CGPA</p>
+            <p><strong>Location:</strong> Hyderabad</p>
+            <span class="status">Applications Open</span>
+            <button onclick="applyForJob('Microsoft')">Apply Now</button>
+        </div>
+
+        <div class="company-card">
+            <h2>Infosys</h2>
+            <p class="role">Systems Engineer</p>
+            <p><strong>Package:</strong> 6 LPA</p>
+            <p><strong>Eligibility:</strong> 6.5 CGPA</p>
+            <p><strong>Location:</strong> Pune</p>
+            <span class="status">Applications Open</span>
+            <button onclick="applyForJob('Infosys')">Apply Now</button>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
