@@ -187,3 +187,109 @@
 .company-search button:hover {
     background: #1d4ed8;
 }
+/* Applications Page */
+
+.applications-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.applications-header h1 {
+    color: #172554;
+    font-size: 32px;
+}
+
+.applications-header p {
+    color: #64748b;
+    margin-top: 12px;
+}
+
+.applications-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.application-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.application-card h3 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.application-card p {
+    color: #64748b;
+}
+
+.application-status {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.remove-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #b91c1c;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.browse-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .application-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .company-navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .company-navbar a {
+        margin: 5px;
+    }
+
+}
